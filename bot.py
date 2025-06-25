@@ -2,7 +2,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler
 import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path=".env")
+load_dotenv()
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update, context):
